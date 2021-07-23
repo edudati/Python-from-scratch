@@ -1,0 +1,11 @@
+n = int(input('primeiro numero: '))
+u = int(input('ultimo numero: '))
+r = int(input('razão: '))
+mais = n
+total = u
+while mais != 0:
+    while n <= total:
+        print('{} . '.format(n), end='')
+        n += r
+    mais = int(input('\nVocê gostaria de ver mais alguns termos? Quantos?'))
+    total += mais * r
